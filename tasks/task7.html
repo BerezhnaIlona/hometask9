@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ukr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/task_style.css" />
+  </head>
+  <body>
+    <h1>Задача 7.</h1>
+    <p>Дано масив цін. Змінити цей масив так, що на ціни товарів, які більші за 1000 грн. дати 30% знижки.</p>
+    <hr />
+    <a href="../index.html" class="back-link">Повернутися на головну сторінку</a>
+    <script>
+      if (confirm('Почати тестування?')) {
+        //1. Вводимо необхідні дані
+        const listOfPrices = [1300, 4300, 290, 991, 790, 8230, 5002, 3601, 500];
+
+        listOfPrices.forEach((price, index, arr) => {
+          if (price > 1000) arr[index] = price * 0.7;
+        });
+
+        document.write(`Масив змін на товари зі знижкою ${listOfPrices}`);
+      }
+    </script>
+  </body>
+</html>

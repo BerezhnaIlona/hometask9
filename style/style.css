@@ -1,0 +1,67 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:regular,500,600,700,800,900);
+
+body {
+  font-family: 'Inter';
+  background-color: #ecebe0;
+}
+h1 {
+  text-align: center;
+}
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+li {
+  flex: 1 1 auto;
+  max-width: 330px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 15px;
+}
+a {
+  flex: 0 1 30%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 75px;
+  color: #000;
+  transition: all 0.3s ease 0s;
+}
+a:hover {
+  font-size: 90px;
+  color: rgba(0, 0, 255, 0.474);
+}
+p {
+  flex: 0 1 70%;
+}
+li:first-child,
+li:nth-child(8),
+li:nth-child(15) {
+  background-color: #92daff;
+}
+li:nth-child(2),
+li:nth-child(9) {
+  background-color: #eeecff;
+}
+li:nth-child(3),
+li:nth-child(10) {
+  background-color: #fff856;
+}
+li:nth-child(4),
+li:nth-child(11) {
+  background-color: #f9bbcb;
+}
+li:nth-child(5),
+li:nth-child(12) {
+  background-color: #ff562c;
+}
+li:nth-child(6),
+li:nth-child(13) {
+  background-color: #b7b12a;
+}
+li:nth-child(7),
+li:nth-child(14) {
+  background-color: #ffc247;
+}

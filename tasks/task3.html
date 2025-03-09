@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ukr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/task_style.css" />
+  </head>
+  <body>
+    <h1>Задача 3.</h1>
+    <p>Користувач вводить кількість елементів. Створити масив, у якому перші 5 елементів заповнені 1- цями, а інші до кінця масиву заповнені 7-ками.</p>
+    <hr />
+    <a href="../index.html" class="back-link">Повернутися на головну сторінку</a>
+    <script>
+      if (confirm('Почати тестування?')) {
+        //1. Вводимо необхідні дані
+        let putNumbers = parseInt(prompt('Введіть кількість елементів для масива', '0'));
+        let arr = new Array(putNumbers);
+
+        arr.fill(1, 0, 5);
+        arr.fill(7, 5);
+        document.write(`Створений новий масив із 1 та 7 має вигляд: <br>
+        ${arr}`);
+      }
+    </script>
+  </body>
+</html>

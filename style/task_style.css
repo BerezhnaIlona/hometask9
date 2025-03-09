@@ -1,0 +1,45 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:regular,500,600,700,800,900);
+
+body {
+  font-family: 'Inter';
+  background-color: #ecebe0;
+  font-size: 20px;
+  position: relative;
+}
+h1,
+p {
+  margin: 0;
+  padding: 10px 0;
+}
+.back-link {
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: black;
+  transition: all 0.5s ease 0s;
+}
+.back-link:hover {
+  background-color: #e4d74c;
+  border-radius: 15px;
+  font-size: 20px;
+  color: rgb(75, 46, 46);
+}
+
+button {
+  padding: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+  background-color: yellow;
+  border: 2px solid gray;
+  border-radius: 15px;
+  cursor: auto;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+}

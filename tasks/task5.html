@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ukr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/task_style.css" />
+  </head>
+  <body>
+    <h1>Задача 5.</h1>
+    <p>Дано масив елементів. Знайти добуток додатних елементів</p>
+    <hr />
+    <a href="../index.html" class="back-link">Повернутися на головну сторінку</a>
+    <script>
+      if (confirm('Почати тестування?')) {
+        //1. Вводимо необхідні дані
+        let numbArr = [19, 0, -23, 9, 55, 41, -34, -1, 22, -78];
+        let count = 1;
+        for (let elem of numbArr) {
+          if (elem > 0) count *= elem;
+        }
+        document.write(`Добуток додатніх елементів становить ${count} `);
+      }
+    </script>
+  </body>
+</html>

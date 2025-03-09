@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ukr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/task_style.css" />
+  </head>
+  <body>
+    <h1>Задача 4.</h1>
+    <p>Дано масив елементів. Вивести на екран елементи, що більші за 100</p>
+    <a href="../index.html" class="back-link">Повернутися на головну сторінку</a>
+    <script>
+      if (confirm('Почати тестування?')) {
+        //1. Вводимо необхідні дані
+        let elemArr = [500, 630, 210, 920, 417, 433, 286, 161, 553];
+
+        //2. Знаходимо результат
+        document.write(`Eлементи масиву, значення яких більше за 100: <br><br>`);
+
+        for (let elem of elemArr) {
+          if (elem > 100) document.write(`${elem} <br>`);
+        }
+      }
+    </script>
+  </body>
+</html>

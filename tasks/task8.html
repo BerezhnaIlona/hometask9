@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ukr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/task_style.css" />
+  </head>
+  <body>
+    <h1>Задача 8</h1>
+    <p>Дано масив номерів авто. Сформувати новий масив тих, які починаються на «А»</p>
+    <hr />
+    <a href="../index.html" class="back-link">Повернутися на головну сторінку</a>
+    <script>
+      if (confirm('Почати тестування?')) {
+        //1. Вводимо необхідні дані
+        const arrCarsNumber = ['ZA1234AB', 'ZA5678CD', 'ZA4321XY', 'AA0853ZA', 'IE8935II', 'AP4994TH', 'AP0399AA', 'AP632-62PT'];
+
+        const arrCarsNumberBeginA = arrCarsNumber.map((elem) => (elem.charAt(0) === 'A' ? elem : null)).filter((elem) => elem !== null);
+
+        document.write(`Повний масив номерів авто має вигляд:  ${arrCarsNumber} <br>`);
+        document.write(`Новий масив номерів авто, які починаються на «А»:  ${arrCarsNumberBeginA}`);
+      }
+    </script>
+  </body>
+</html>
